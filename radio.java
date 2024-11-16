@@ -86,3 +86,26 @@ public class Radio {
             this.autor = autor;
             this.genero = genero;
         }
+
+// Getters
+        public String getNombre() { return nombre; }
+        public int getDuracion() { return duracion; }
+        public String getAutor() { return autor; }
+        public String getGenero() { return genero; }
+    }
+
+    // Clase interna para Emisora
+    private static class Emisora {
+        private double frecuencia;
+        private String banda;
+        private String nombre;
+
+        public Emisora(double frecuencia, String banda, String nombre) {
+            this.frecuencia = frecuencia;
+            this.banda = banda;
+            this.nombre = nombre;
+        }
+
+        public double getFrecuencia() { return frecuencia; }
+        public String getBanda() { return banda; }
+    }
