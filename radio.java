@@ -55,3 +55,34 @@ public class Radio {
     public void guardarEmisora(double frecuencia) {
         emisorasGuardadas.add(new Emisora(frecuencia, this.banda, ""));
     }
+
+ public void cargarEmisora(int posicion) {
+        if (posicion >= 0 && posicion < emisorasGuardadas.size()) {
+            Emisora emisora = emisorasGuardadas.get(posicion);
+            this.frecuencia = emisora.getFrecuencia();
+            this.banda = emisora.getBanda();
+        }
+    }
+
+    // Métodos de la interfaz ICarTipoC
+    public void cambiarLlamadaEnEspera() {
+        this.estadoLlamada = this.estadoLlamada.equals("En espera") ? "Conectada" : "En espera";
+    }
+
+    public void verPronosticoDelTiempo() {
+        // Este método no realiza acciones en esta implementación.
+    }
+
+    // Clase interna para Cancion
+    public static class Cancion {
+        private String nombre;
+        private int duracion;
+        private String autor;
+        private String genero;
+
+        public Cancion(String nombre, int duracion, String autor, String genero) {
+            this.nombre = nombre;
+            this.duracion = duracion;
+            this.autor = autor;
+            this.genero = genero;
+        }
