@@ -109,3 +109,16 @@ public class Radio {
         public double getFrecuencia() { return frecuencia; }
         public String getBanda() { return banda; }
     }
+
+     // Getters para la radio
+    public boolean isEstado() { return estado; }
+    public int getVolumen() { return volumen; }
+    public String getModoActual() { return modoActual; }
+    public String getBanda() { return banda; }
+    public double getFrecuencia() { return frecuencia; }
+    public List<Emisora> getEmisorasGuardadas() { return emisorasGuardadas; }
+    public List<Cancion> getListaReproduccion() { return listaReproduccion; }
+    public boolean isTelefonoConectado() { return telefonoConectado; }
+    public String getEstadoLlamada() { return estadoLlamada; }
+    public String getPronosticoTiempo() { return pronosticoTiempo; }
+}
