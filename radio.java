@@ -74,41 +74,10 @@ public class Radio {
     }
 
     // Clase interna para Cancion
-    public static class Cancion {
-        private String nombre;
-        private int duracion;
-        private String autor;
-        private String genero;
-
-        public Cancion(String nombre, int duracion, String autor, String genero) {
-            this.nombre = nombre;
-            this.duracion = duracion;
-            this.autor = autor;
-            this.genero = genero;
-        }
-
-// Getters
-        public String getNombre() { return nombre; }
-        public int getDuracion() { return duracion; }
-        public String getAutor() { return autor; }
-        public String getGenero() { return genero; }
-    }
+    
 
     // Clase interna para Emisora
-    private static class Emisora {
-        private double frecuencia;
-        private String banda;
-        private String nombre;
-
-        public Emisora(double frecuencia, String banda, String nombre) {
-            this.frecuencia = frecuencia;
-            this.banda = banda;
-            this.nombre = nombre;
-        }
-
-        public double getFrecuencia() { return frecuencia; }
-        public String getBanda() { return banda; }
-    }
+    
 
      // Getters para la radio
     public boolean isEstado() { return estado; }
@@ -122,3 +91,4 @@ public class Radio {
     public String getEstadoLlamada() { return estadoLlamada; }
     public String getPronosticoTiempo() { return pronosticoTiempo; }
 }
+
